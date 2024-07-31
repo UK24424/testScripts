@@ -1,4 +1,4 @@
-#$testResult = Invoke-RestMethod -Uri "https://api.github.com/repos/PowerShell/PowerShell/issues?per_page=1&page=0&state=closed" -Method Get
+$testResult = Invoke-RestMethod -Uri "https://api.github.com/repos/PowerShell/PowerShell/issues?per_page=1&page=0&state=closed" -Method Get
 $issues = Invoke-RestMethod -Uri "https://api.github.com/repos/PowerShell/PowerShell/issues?per_page=100&page=0&state=closed" -Method Get
 
 # foreach ($testResult in $testResults) {
